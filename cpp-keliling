@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <title>Menghitung Keliling Persegi Panjang</title>
+        <script type="text/javascript">
+            function hitungKeliling(){
+                panjang = document.getElementById("txtPanjang").value;
+                lebar = document.getElementById("txtLebar").value;
+                Keliling = (2 * panjang) + (2 * lebar);
+                document.getElementById("txtKeliling").value =  Keliling;
+
+            }
+        </script>
+    </head>
+    <body>
+        Menghhitung Keliling Persegi Panjang<br/>
+        Panjang : <input type="text" id="txtPanjang" name="txtPanjang"><br/>
+        Lebar : <input type="text" id="txtLebar" name="txtLebar"><br/>
+        <input type="button" id="btnHitung" value="Hitung Keliling" onclick="hitungKeliling();"><br/>
+        Keliling : <input type="text" id="txtKeliling" name="txtKeliling">
+    </body>
+</html>
